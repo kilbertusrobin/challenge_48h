@@ -1,0 +1,42 @@
+.loading-spinner-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 16rem; /* 256px */
+}
+
+.spinner-wrapper {
+    position: relative;
+    width: 3rem; /* 48px */
+    height: 3rem; /* 48px */
+}
+
+.spinner-base {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 4px solid var(--site-light);
+}
+
+.spinner-animation {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 4px solid var(--site-primary);
+    border-top-color: transparent;
+    animation: spinner-spin 1s linear infinite;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.loading-text {
+    margin-left: 0.75rem;
+    color: #4b5563;
+}
+
+@keyframes spinner-spin {
+    to {
+        transform: rotate(360deg);
+    }
+} 

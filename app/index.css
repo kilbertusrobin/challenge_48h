@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Styles personnalisés pour Leaflet */
+.leaflet-container {
+  font-family: inherit;
+}
+
+.custom-pollution-marker {
+  background: transparent !important;
+  border: none !important;
+}
+
+/* Amélioration des popups Leaflet */
+.leaflet-popup-content-wrapper {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border: 1px solid #dbe4d1;
+}
+
+.leaflet-popup-content {
+  margin: 0;
+  line-height: 1.4;
+}
+
+.leaflet-popup-tip {
+  border-top-color: #dbe4d1 !important;
+}
+
+/* Animations fluides */
+.leaflet-marker-icon {
+  transition: transform 0.2s ease;
+}
+
+.leaflet-marker-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Styles pour les rectangles des zones */
+.leaflet-interactive {
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.leaflet-interactive:hover {
+  opacity: 0.8;
+}
+
+/* Amélioration de l'apparence générale */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #dbe4d1;
+}
+
+/* Scrollbar personnalisée avec les couleurs du site */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #dbe4d1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6aa839;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5a8f31;
+}
+
+/* Animations personnalisées */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Styles pour les boutons avec les couleurs du site */
+.btn-primary {
+  @apply bg-site-primary hover:bg-site-primary-dark text-white transition-colors;
+}
+
+.btn-secondary {
+  @apply bg-site-light hover:bg-site-light-hover text-site-primary border border-site-primary transition-colors;
+}
+
+/* Amélioration des cartes avec les couleurs du site */
+.card {
+  @apply bg-white rounded-lg shadow-lg border border-site-light;
+}
+
+.card-header {
+  @apply border-b border-site-light bg-gradient-to-r from-site-light to-white;
+}

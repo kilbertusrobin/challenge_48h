@@ -1,0 +1,13 @@
+.app-footer {
+    background-color: white;
+    padding: 1.25rem 1.5rem;
+    text-align: center;
+    border-top: 1px solid #e5e7eb; /* gray-200 */
+    color: #6b7280; /* gray-500 */
+    font-size: 0.875rem;
+    flex-shrink: 0; /* Empêche le footer de rétrécir */
+}
+
+.app-footer p {
+    margin: 0;
+} 

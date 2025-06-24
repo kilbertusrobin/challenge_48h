@@ -1,0 +1,28 @@
+.map-container-full {
+    height: 100%;
+    width: 100%;
+}
+
+.custom-pollution-marker {
+    /* Styles pour les marqueurs de pollution personnalisés si nécessaire */
+}
+
+.popup-content {
+    padding: 0.5rem;
+}
+
+.popup-content h4 {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.popup-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    font-size: 0.875rem;
+}
+
+.popup-details p > strong {
+    font-weight: 600;
+} 
