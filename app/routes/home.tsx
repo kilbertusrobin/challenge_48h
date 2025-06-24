@@ -1,5 +1,11 @@
 import type { Route } from "./+types/home";
 import { Welcome } from "../welcome/welcome";
+import OurPartners from '../components/OurPartners';
+import FAQ from '../components/FAQItem';
+import CarbonCalculator from '../components/CarbonCalculator';
+import EcoTips from '../components/EcoTips';
+import AirAlerts from '../components/AirAlerts';
+
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -9,5 +15,13 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Home() {
-  return <Welcome />;
+  return (
+  <>
+    <Welcome />
+    <OurPartners />
+    <FAQ />
+    <CarbonCalculator />
+    <EcoTips />
+    <AirAlerts />
+  </>);
 }
